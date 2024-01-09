@@ -204,6 +204,9 @@
             "water_valve": {
                 "name": "Irrigation valve"
             },
+            "curtain_robot": {
+                "name": "Curtain Robot"
+            },
             "window_check": {
                 "name": "Window Check"
             }

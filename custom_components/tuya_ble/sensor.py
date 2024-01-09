@@ -306,6 +306,23 @@ mapping: dict[str, TuyaBLECategorySensorMapping] = {
             ],
         },
     ),
+    "cl": TuyaBLECategorySensorMapping(
+        products={
+            "kcy0x4pi": [  # Smart curtain robot
+                TuyaBLEBatteryMapping(dp_id=13),
+                TuyaBLETemperatureMapping(dp_id=103),
+                TuyaBLESensorMapping(
+                    dp_id=104,
+                    description=SensorEntityDescription(
+                        key="Luminosity",
+                        device_class=SensorDeviceClass.ILLUMINANCE,
+                        native_unit_of_measurement=PERCENTAGE,
+                        state_class=SensorStateClass.MEASUREMENT,
+                    ),
+                ),
+            ],
+        },
+    ),
 }
 
 

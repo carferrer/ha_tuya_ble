@@ -204,6 +204,28 @@ mapping: dict[str, TuyaBLECategorySelectMapping] = {
             ],
         },
     ),
+    "cl": TuyaBLECategorySelectMapping(
+        products={
+            **dict.fromkeys(
+                ["kcy0x4pi"], # Smart curtain robot
+                [
+                    TuyaBLESelectMapping(
+                        dp_id=1,
+                        description=SelectEntityDescription(
+                            key="control",
+                            options=[
+                                "open",
+                                "stop",
+                                "close",
+                                "continue",
+                            ],
+                            entity_category=EntityCategory.CONFIG,
+                        ),
+                    ),
+                ]
+            ),
+        }
+    ),
 }
 
 

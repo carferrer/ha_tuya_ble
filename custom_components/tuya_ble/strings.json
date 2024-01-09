@@ -206,7 +206,10 @@
       },            
       "water_valve": {
           "name": "Irrigation valve"
-      }    
+      },            
+      "curtain_robot": {
+          "name": "Smart curtain robot"
+      }       
     },
     "text": {
       "program": {

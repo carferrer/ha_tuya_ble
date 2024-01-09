@@ -301,6 +301,14 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
             ),
         },
     ),
+    "cl": TuyaBLECategoryInfo(
+        products={
+            "kcy0x4pi":  # device product_id
+            TuyaBLEProductInfo(
+                name="Smart curtain robot",
+            ),
+        },
+    ),
 }
 
 
